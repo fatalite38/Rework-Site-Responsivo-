@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    box-sizing: border-box; /* Inclui a borda sem quebrar */
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.main {
+    background-color: #1D2437;
+    background-image: url('../img/bg.png');
+}
+
+.container {
+    color: #fff;
+    max-width: 1070px;
+    margin: auto;
+ 
+}
+
+header {
+    padding-top: 45.53px;
+}
+
+.area-dupla {
+    display: flex;
+}
+
+.area-dupla .leftside {
+    flex: 1;
+}
+
+.area-dupla .leftside h1 {
+    font-size: 42px;
+    margin: 60px 0 30px 0;
+}
+
+.area-dupla .leftside .txt {
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.form {
+    margin-bottom: 30px;
+}
+
+.area-dupla .leftside .form input {
+    background: transparent;
+    color: #fff;
+    outline: none;
+    padding: 10px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width: 300px;
+    margin-right: 10px;
+}
+
+.area-dupla .leftside .form button {
+    background-color: #0071B7;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    border: 0;
+    
+}
+.area-dupla .leftside img {
+    padding-right: 10px;
+    margin-bottom: 60px;
+}
+
+.area-dupla .rightside {
+    flex: 1;
+    background-image: url('../img/perfil.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    
+}
+
+/*@keyframes exp {
+    0% {background-color:red;top:0;left:0;}
+    25% {background-color:yellow;top:0;left:200;}
+    50% {background-color:red;top:200;left:200;}
+    75% {background-color:yellow;top:200;left:0;}
+    100% {background-color:red;top:0;left:0;}
+}
+
+.exp {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 20px;
+    animation-name: exp;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+} */
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 2px solid #C2C8CB;
+}
+
+.info div {
+    color: #C2C8CB;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px;
+
+}
+
+.info .circle {
+    width: 6px;
+    height: 6px;
+    background-color: #C2C8CB;
+    border-radius: 50%;
+}
+
+/* Separation */
+
+.instruction  {
+    
+    margin: auto;
+    max-width: 900px;
+    padding: 70px 0;
+
+}
+
+.inst-item {
+    border-left: 3px solid #ECF0F3;
+    display: flex;
+}
+
+.circle2 {
+    width: 17px;
+    height: 17px;
+    background-color: #0071B7;
+    border-radius: 50%;
+    margin-left: -8px;
+}
+
+.text-class {
+    margin-left: 50px;
+    flex: 1;
+}
+
+.text-class h2 {
+    font-size: 32px;
+    margin-left: 50px;
+    margin: -10px 0 0 0;
+    
+}
+
+.text-class p {
+    color: gray;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 70px;
+}
+
+
+/****** RODAPÉ *******/
+
+
+.describe {
+    height: 300px;
+    background-color: #1D2437;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.inst-describe {
+    flex: 1;
+    padding: 0 0 0 200px;
+}
+
+.inst-describe h2 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+}
+
+.inst-describe p {
+    color:rgba(255, 255, 255, 0.4);
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.input-describe {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-describe input {
+    width: 300px;
+    height: 43px;
+    background-color: #1D2437;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 10px;
+    outline: none;
+}
+
+.input-describe button {
+    width: 300px;
+    height: 43px;
+    background-color: #0071B7;
+    color: #fff;
+    margin-top: 25px;
+    cursor: pointer;
+    border: 0;
+}
+
+.input-describe button:hover {
+    opacity: .7;
+    
+}
+
+/*** rodapé2 ***/
+
+.rodape {
+    background-color: #1D2437;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 50px;
+    border-top: 2px solid rgb(92, 92, 92);
+
+}
+
+
+
+.rodape p {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+
+/***** Responsividade *****/
+
+@media (max-width: 1070px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .instruction .instruction-container {
+        padding: 0 20px;
+    }
+
+    .describe .inst-describe {
+        margin: 0;
+        padding: 0 10px 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .area-dupla {
+        flex-direction: column-reverse;
+    }
+    .area-dupla .rightside {
+        height: 400px;
+        flex: none;
+        background-size: auto 100%;
+        background-position-x: center;
+    }
+    .area-dupla .rightside .rightside-linear {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(360deg, #1D2437 8.92%, rgba(29, 36, 55, 0) 65.85%);
+    }
+    .area-dupla .leftside h1 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .area-dupla .leftside .txt {
+        text-align: center;
+    }
+    .area-dupla .leftside .formulario .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .area-dupla .leftside .formulario .form button {
+        margin-top: 20px;
+        width: 100%;
+        
+    }
+    .area-dupla .leftside .formulario .form input {
+        width: 100%;
+        margin: auto;
+    }
+    .area-dupla .leftside .imagens {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .describe {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 15px;
+    }
+
+    .describe .input-describe {
+        padding-top: 20px;
+    }
+
+}
+
+@media (max-width: 587px) {
+    .rodape {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info {
+        display: none;
+    }
+}
